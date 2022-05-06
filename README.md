@@ -1,2 +1,2 @@
 # shachamtal
-The first exercise in Web course
+The exercise in Web course
