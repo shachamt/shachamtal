@@ -1,20 +1,21 @@
 body {
-    
+    background-image: linear-gradient(rgba(102, 97, 97, 0.75), rgba(102, 97, 97, 0.75)), url(../static/background.jpg);
     font-family: myFirstFont;
     padding: 0;
     margin: 0;
     width: 100%;
-    background-image: linear-gradient(135deg, rgb(241, 176, 230) 0%, rgb(144, 181, 241) 100%);
     background-position: center;
     background-size: cover;
 }
 
 @font-face {
+    /*declaring a font*/
     font-family: myFirstFont;
     src: url(../static/Spectral/Spectral-Light.ttf);
 }
 
 header {
+    /*sticky header with nothing above*/
     position: sticky;
     top: 0;
 }
@@ -24,37 +25,105 @@ header nav {
     padding: 5px;
     box-shadow: 0 0 0.5vh black;
     text-align: center;
-    height: 10vh;
+    height: 11vh;
 
 }
 
 header nav li {
-    display: inline; /*to be side be side*/
+    display: inline;
+    /*to be side be side*/
 }
 
 header nav li a {
     color: black;
-    text-decoration: none; /*to look like regular text with no lines*/
+    text-decoration: none;
+    /*to look like regular text with no lines*/
     padding: 5vw;
     font-size: 1.5vw;
-    
-
 }
 
-header nav li a:hover {
+a:hover {
     color: royalblue;
 }
 
 #logo {
     float: left;
     margin-top: -30px;
-    width:6vw;
+    width: 6vw;
 }
 
 #menuIcon {
     float: right;
     margin-top: -30px;
-    width:5vw;
+    width: 5vw;
     cursor: pointer;
 }
 
+#smallHeader {
+
+    margin: 0 auto;/*puts in the center*/
+    padding: 10vh;
+    text-align: center;
+    width: 50%;
+    color: white;
+}
+
+#smallHeader h1 {
+    font-size: 10vh;
+    margin: 0;
+}
+
+#smallHeader h2 {
+    font-size: 4vh;
+
+}
+
+#smallHeader p {
+    font-weight: 100;
+    /*to look less bold than the h1*/
+    font-size: 3vh;
+}
+
+#container {
+    display: grid;
+}
+
+/*
+#pictures {
+    display: grid;
+    grid-template-columns: 1vw 1vw;
+
+}*/
+
+#aboutUs {
+    margin: 0 auto;/*puts in the center*/
+    padding-bottom: 5vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+#footer {
+    background-color: rgb(107, 102, 102);
+
+}
+
+#footerCointainer {
+    text-align: center;
+    max-width: 90vw;
+    margin: auto;
+    background-color: rgb(179, 179, 179);
+    border-radius: 20px;
+    font-size: 1vw;
+
+}
+
+
+footer a {
+    list-style: none;
+    color: black;
+    /*to look like regular text with no lines*/
+}
