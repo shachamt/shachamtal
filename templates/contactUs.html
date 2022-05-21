@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us for rent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script defer src="../static/JS.js"></script>
     <link rel="stylesheet" href="../static/CSS.css">
 
@@ -37,16 +38,17 @@
             <form action="" method="post">
                 <fieldset>
                     <legend>Contact Us</legend>
+                    <div id="error"></div>
                     <label for="fullName">Full Name: </label>
                     <input type="text" id="fullName" class="inputs" name="fullName" required>
                     <p></p>
 
-                    <label id="email" for="email">email: </label>
+                    <label for="email">email: </label>
                     <input type="email" name="email" id="email" class="inputs" required>
                     <p></p>
 
                     <label for="telephone">Telephone: </label>
-                    <input type="tel" name="telephone" id="telephone" class="inputs" required>
+                    <input type="number" name="telephone" id="telephone" class="inputs" required>
                     <p></p>
 
                     <label for="arrivingDate">Please enter your arriving date:</label>
@@ -83,14 +85,19 @@
                     Do you have any other questions? <br>
                     <textarea id="textarea" name="freePlace" id="freePlace">Type here</textarea>
 
-                    <p></p>
-                    <button id="sendButton" onclick="fillProgress()">Send</button>
+                    <div id="send">Finished? click here to load the data
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <button type="button" id="loadData" onclick="fillProgress()">Load data</button>
+                    </div>
+                    <div><progress value="1" id="loadProgress" min="1" max="100"></progress></div>
+                    <div id="allLoad"></div>
+
+                    <button type="submit" id="sendButton">Send File</button>
                     <h2> We appreciate your time and will get back to you ASAP! </h2>
+
                 </fieldset>
             </form>
 
-            <p id="sending">Sending...</p>
-            <progress value="1" id="loadProgress" min="1" max="100"></progress>
             <br>
         </div>
 
@@ -141,7 +148,7 @@
                         href="https://www.tripadvisor.com/Attractions-g297741-Activities-Beersheba_Southern_District.html"
                         target="_blank"> Click here</a>
                 </div>
-                <a id="goUp" href="#smallHeader">Go Back Up</a>
+                <a id="goUpBtn" href="#smallHeader">Go Back Up</a>
                 </p>
             </div>
         </footer>

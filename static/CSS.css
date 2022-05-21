@@ -40,14 +40,12 @@ header nav {
 }
 
 header nav li {
-    display: inline;
-    /*to be side be side*/
+    display: inline; /*to be side be side*/
 }
 
 header nav li a {
     color: black;
-    text-decoration: none;
-    /*to look like regular text with no lines*/
+    text-decoration: none; /*to look like regular text with no lines*/
     padding: 5vw;
     font-size: 200%;
 }
@@ -68,8 +66,7 @@ header nav li a {
 /*_______Small Header______*/
 #smallHeader {
     grid-area: smallHeader;
-    margin: 0 auto;
-    /*puts in the center*/
+    margin: 0 auto; /*puts in the center*/
     padding: 5%;
     text-align: center;
     width: 50%;
@@ -91,13 +88,13 @@ header nav li a {
 }
 
 /*_______Footer______*/
-#footer {
+#footer { /*the outside block*/
     background-color: rgb(107, 102, 102);
     grid-area: footer;
     margin-top: 4vh;
 }
 
-#footerCointainer {
+#footerCointainer { /*the inside block*/
     text-align: center;
     max-width: 90vw;
     margin: auto;
@@ -106,29 +103,27 @@ header nav li a {
     font-size: 100%;
 }
 
-#footerLinks {
+#footerLinks { /*seperate lines*/
     display: block;
 }
 
 footer a {
     list-style: none;
-    color: black;
-    /*to look like regular text with no lines*/
+    color: black; /*to look like regular text with no lines*/
 }
 
-footer h2 {
-    /*the header of the footer*/
+footer h2 { /*the header of the footer*/
     margin: 0;
 }
 
-#goUp {
+#goUpBtn {
     margin: 1vh;
     font-size: 3vh;
 }
 
 
 /*_______Animations______*/
-@keyframes smallAndBig {
+@keyframes smallAndBig { /*to show big picture when hovering*/
     0% {
         width: 50%;
     }
@@ -169,8 +164,7 @@ footer h2 {
 
 /*____About Us___*/
 #aboutUs {
-    margin: 0 auto;
-    /*puts in the center*/
+    margin: 0 auto; /*puts in the center*/
     padding-bottom: 3%;
     padding-right: 2%;
     padding-left: 2%;
@@ -185,7 +179,7 @@ footer h2 {
     font-size: 110%;
 }
 
-.moreText {
+.moreText { /*will show up with JS*/
     display: none;
 }
 
@@ -203,7 +197,7 @@ footer h2 {
     display: inline;
 }
 
-.text.showMore .dots {
+.text.showMore .dots { /*the dots that disappeare when you read more*/
     display: none;
 }
 
@@ -212,7 +206,7 @@ footer h2 {
 }
 
 /*____Texts___*/
-#explain {
+#explain { /*what do we offer?*/
     background-color: rgba(255, 255, 255, 0.568);
     border-radius: 15px;
     width: 25vw;
@@ -251,7 +245,7 @@ footer h2 {
     width: 40%;
 }
 
-/*_______Contact Us______*/
+/*_______Contact Us page______*/
 /*____Grid___*/
 .containerContact {
     display: grid;
@@ -263,7 +257,6 @@ footer h2 {
         "aboutUs aboutUs"
         "footer footer";
 }
-
 
 /*____Form___*/
 #myForm {
@@ -279,7 +272,7 @@ fieldset {
     width: 35vw;
 }
 
-legend {
+legend { /*header inside the border*/
     font-size: 3vh;
     color: white;
     padding: 0.25vw;
@@ -290,23 +283,20 @@ label {
     margin-top: 1vw;
 }
 
-.inputs {
-    /*all the inputs except the checkbox*/
+.inputs { /*all the inputs except the checkbox*/
     padding: 0.2vw;
     border: solid 0.2vh black;
     width: 30%;
 }
 
-input[type="checkbox"]+label {
-    /*the labels of checkboxes*/
+input[type="checkbox"]+label { /*the labels of checkboxes*/
     display: inline-block;
     cursor: pointer;
     padding: 0;
     margin: 0;
 }
 
-textarea {
-    /*place to write in*/
+textarea { /*place to write in*/
     width: 25vw;
     height: 10vh;
     padding: 0.2vw;
@@ -331,9 +321,20 @@ progress {
     margin: 1vh 2vw;
 }
 
-#sending {
+#send { /*the text to fill the progress*/
     margin: 0 2vw;
+    padding-top: 3%;
     font-weight: bold;
+}
+
+#loadData { /*the button*/
+    margin-left: 3%;
+
+}
+
+#allLoad { /*the text that shows after loading*/
+    font-size: 120%;
+
 }
 
 #sendButton {
@@ -358,7 +359,6 @@ sendButton:hover {
     border: 1px black solid;
     border-radius: 15px;
     width: 20vw;
-
 }
 
 #picturesContact {
@@ -433,7 +433,7 @@ sendButton:hover {
         display: none;
     }
 
-    /*____Home___*/
+    /*____Home Page___*/
     .containerHome {
         display: grid;
         height: 100vh;
@@ -476,7 +476,7 @@ sendButton:hover {
         width: 40vw;
     }
 
-    /*____Contact___*/
+    /*____Contact Us Page___*/
     .containerContact {
         display: grid;
         height: 100vh;
@@ -489,8 +489,7 @@ sendButton:hover {
             "footer";
     }
 
-    fieldset {
-        /*adjust the form to the small screen*/
+    fieldset { /*adjust the form to the small screen*/
         width: 80vw;
         margin: 5vw;
     }
